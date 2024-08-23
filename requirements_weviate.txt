@@ -1,0 +1,8 @@
+chainlit 
+farm-haystack[weaviate,inference]
+requests 
+transformers 
+
+pdfplumber  # for PDF handling
+
+weaviate-haystack

@@ -1,0 +1,11 @@
+farm-haystack[inference]
+chroma-haystack
+chainlit
+
+requests
+pdfplumber
+
+
+#transformers
+ 
+

@@ -1,2 +1,9 @@
 chainlit
 transformers
+
+farm-haystack[inference]
+pdfplumber  # for PDF handling
+
+
+#pip install weaviate-client
+#pip install weaviate-haystack
