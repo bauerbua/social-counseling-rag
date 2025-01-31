@@ -1,0 +1,20 @@
+Q1: Wie hoch ist die Familienbeihilfe für ein vierjähriges Kind mit Behinderung?
+A1_similarity: Der unmittelbare monatliche Familienfreibetrag für ein vierjähriges Kind mit Behinderung beträgt 262 Euro, wobei dieser Betrag von den entsprechenden pflegebedingten Geldleistungen abgezogen wird.
+A1_mmr: Das erhöhte Erste-Rang-Familienerstattungsnetzwerk für ein vierjähriges Kind mit einer Behinderung (graduierender Wert liegt zwischen 45% und 49%) bietet einen monatlichen Freibetrag in Höhe von 401 Euro an.
+A1_correct_answer: 
+
+Q2: Ich habe eine Behinderung und muss nun deshalb meine Wohnung umbauen. Gibt es hierfür Zuschüsse?
+
+
+
+Q3: Welche Unterstützung gibt es für Familien, deren Kinder eine Behinderung haben, in Form von erhöhter Familienbeihilfe?
+A3: Familien mit einem Kind, das eine erhebliche Behinderung hat (mindestens 50 % Grad der Behinderung oder voraussichtlich dauerhafte Erwerbsunfähigkeit), können eine erhöhte Familienbeihilfe beantragen. Diese setzt sich aus der regulären Familienbeihilfe und einem monatlichen Erhöhungszuschlag von 155,90 Euro zusammen. Der Betrag variiert mit dem Alter des Kindes, von 269,90 Euro ab Geburt bis 321,00 Euro ab dem 19. Lebensjahr. Der Antrag erfolgt über das Finanzamt und kann bis zu fünf Jahre rückwirkend gewährt werden. Weitere Informationen finden sich auf Seite 8 des Dokuments
+
+Q4: Gibt es Zuschüsse für den Umbau eines Autos für ein Kind mit Behinderung?
+A4: Ja, Familien, die ein Fahrzeug hauptsächlich für die Mobilität ihres behinderten Kindes nutzen und dafür besondere Anpassungen benötigen, können einen Zuschuss zur barrierefreien Anpassung und Umrüstung des Kraftfahrzeugs beantragen. Die Förderung ist beim Sozialministeriumservice und dem jeweiligen Amt der Landesregierung möglich. Genaue Anforderungen und Details zum Antragsverfahren sind auf Seite 13 beschrieben​
+
+Q5: Welche Unterstützung gibt es für die Kosten der Beförderung zur Schule für Kinder mit Behinderung?
+A5: Eltern von Kindern mit Behinderungen haben Anspruch auf eine Schulfahrtbeihilfe, sofern für das Kind Familienbeihilfe bezogen wird. Die Höhe der Schulfahrtbeihilfe hängt von der Entfernung zur Schule und der Anzahl der Schultage ab. Für Entfernungen bis 10 km beträgt die Beihilfe zwischen 4,40 Euro und 13,10 Euro monatlich, und für Entfernungen über 10 km liegt sie zwischen 6,60 Euro und 19,70 Euro monatlich. Der Antrag ist beim Finanzamt bis zum 30. Juni des Folgejahres einzureichen. Weitere Informationen sind auf Seite 13 verfügbar​
+
+Q6: Gibt es eine finanzielle Unterstützung für behinderungsbedingte Umbauten im Wohnbereich?
+A6: Ja, Menschen mit Behinderungen, die Anpassungen im Wohnbereich benötigen, können einen Zuschuss für behindertengerechte Umbauten beantragen. Dieser Zuschuss deckt einen Teil der Kosten, allerdings ist ein Selbstbehalt zu erwarten. Der Antrag muss vor Beginn der Baumaßnahmen gestellt werden und kann beim Amt der Landesregierung oder dem Sozialministeriumservice eingereicht werden. Weitere Details stehen auf Seite 29 des Dokuments

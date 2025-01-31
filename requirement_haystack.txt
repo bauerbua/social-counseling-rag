@@ -1,7 +1,0 @@
-chainlit 
-farm-haystack[inference]
-requests 
-transformers 
-
-pdfplumber  # for PDF handling
- 

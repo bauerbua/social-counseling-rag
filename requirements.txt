@@ -1,9 +1,9 @@
-chainlit
-transformers
+chainlit 
+requests 
+transformers[torch]
+sentence-transformers>=3.0.0
+pypdf
+haystack-ai
+numpy==1.26.4
 
-farm-haystack[inference]
-pdfplumber  # for PDF handling
-
-
-#pip install weaviate-client
-#pip install weaviate-haystack
+weaviate-haystack
