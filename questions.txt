@@ -1,11 +1,11 @@
+# EIN:BLICK 7
+
 Q1: Wie hoch ist die Familienbeihilfe für ein vierjähriges Kind mit Behinderung?
 A1_similarity: Der unmittelbare monatliche Familienfreibetrag für ein vierjähriges Kind mit Behinderung beträgt 262 Euro, wobei dieser Betrag von den entsprechenden pflegebedingten Geldleistungen abgezogen wird.
 A1_mmr: Das erhöhte Erste-Rang-Familienerstattungsnetzwerk für ein vierjähriges Kind mit einer Behinderung (graduierender Wert liegt zwischen 45% und 49%) bietet einen monatlichen Freibetrag in Höhe von 401 Euro an.
 A1_correct_answer: 
 
 Q2: Ich habe eine Behinderung und muss nun deshalb meine Wohnung umbauen. Gibt es hierfür Zuschüsse?
-
-
 
 Q3: Welche Unterstützung gibt es für Familien, deren Kinder eine Behinderung haben, in Form von erhöhter Familienbeihilfe?
 A3: Familien mit einem Kind, das eine erhebliche Behinderung hat (mindestens 50 % Grad der Behinderung oder voraussichtlich dauerhafte Erwerbsunfähigkeit), können eine erhöhte Familienbeihilfe beantragen. Diese setzt sich aus der regulären Familienbeihilfe und einem monatlichen Erhöhungszuschlag von 155,90 Euro zusammen. Der Betrag variiert mit dem Alter des Kindes, von 269,90 Euro ab Geburt bis 321,00 Euro ab dem 19. Lebensjahr. Der Antrag erfolgt über das Finanzamt und kann bis zu fünf Jahre rückwirkend gewährt werden. Weitere Informationen finden sich auf Seite 8 des Dokuments
@@ -18,3 +18,56 @@ A5: Eltern von Kindern mit Behinderungen haben Anspruch auf eine Schulfahrtbeihi
 
 Q6: Gibt es eine finanzielle Unterstützung für behinderungsbedingte Umbauten im Wohnbereich?
 A6: Ja, Menschen mit Behinderungen, die Anpassungen im Wohnbereich benötigen, können einen Zuschuss für behindertengerechte Umbauten beantragen. Dieser Zuschuss deckt einen Teil der Kosten, allerdings ist ein Selbstbehalt zu erwarten. Der Antrag muss vor Beginn der Baumaßnahmen gestellt werden und kann beim Amt der Landesregierung oder dem Sozialministeriumservice eingereicht werden. Weitere Details stehen auf Seite 29 des Dokuments
+
+
+# AK_sozialpolitik
+1. Was ist das Ziel des Behinderten-Gleichstellungspakets?
+Antwort:  
+Das Ziel des Behinderten-Gleichstellungspakets ist es, sicherzustellen, dass Menschen mit Behinderungen nicht diskriminiert werden und gleichberechtigt am gesellschaftlichen Leben teilhaben können. Es setzt zudem eine EU-Richtlinie zum Schutz von Menschen mit Behinderungen um.  
+
+2. Welche Gesetze umfasst das Behinderten-Gleichstellungspaket?
+Antwort:  
+Das Behinderten-Gleichstellungspaket umfasst folgende Gesetze:  
+- Bundes-Behinderten-Gleichstellungsgesetz  
+- Behinderten-Einstellungsgesetz (Regelungen zum Schutz vor Diskriminierung in der Arbeitswelt)  
+- Einrichtung einer Behindertenanwaltschaft nach dem Bundes-Behindertengesetz  
+- Einrichtung einer Schlichtungsstelle beim Sozialministerium-Service  
+
+3. Welche Arten von Diskriminierung gibt es in der Arbeitswelt?
+Antwort:  
+Es gibt vier Arten von Diskriminierung in der Arbeitswelt:  
+- Unmittelbare Diskriminierung: Direkte Benachteiligung aufgrund einer Behinderung.  
+- Mittelbare Diskriminierung: Vorschriften oder Barrieren, die neutral erscheinen, aber Menschen mit Behinderungen benachteiligen.  
+- Diskriminierung durch Belästigung: Einschüchterndes oder beleidigendes Verhalten gegenüber Menschen mit Behinderungen.  
+- Anweisung zur Diskriminierung: Eine Person wird angewiesen, eine andere Person aufgrund ihrer Behinderung zu benachteiligen.  
+
+4. Wer ist durch das Behinderten-Einstellungsgesetz vor Diskriminierung geschützt?
+Antwort:  
+Das Behinderten-Einstellungsgesetz schützt:  
+- Menschen mit Behinderungen (unabhängig von der Schwere der Behinderung).  
+- Angehörige von Menschen mit Behinderungen (z. B. Eltern, Geschwister, Lebenspartner).  
+- Zeuginnen und Zeugen oder Auskunftspersonen, die Menschen mit Behinderungen in rechtlichen Verfahren unterstützen.  
+
+5. Wann liegt eine unmittelbare Diskriminierung vor?
+Antwort:  
+Eine unmittelbare Diskriminierung liegt vor, wenn eine Person mit Behinderung in einer vergleichbaren Situation direkt schlechter behandelt wird als andere.  
+
+Beispiel:  
+Herr S. hat eine Gehbehinderung und bewirbt sich als Buchhalter. Obwohl er fachlich geeignet ist, wird ihm der Job verweigert, weil der Chef in der Vergangenheit schlechte Erfahrungen mit Menschen mit Behinderungen gemacht hat.  
+
+6. Welche Entschädigung gibt es für Diskriminierung in der Arbeitswelt?
+Antwort:  
+Betroffene Personen haben Anspruch auf:  
+- Ersatz des materiellen Schadens (z. B. entgangenes Gehalt, finanzielle Verluste).  
+- Ersatz des immateriellen Schadens (z. B. für Kränkung oder psychische Belastung).  
+- Schadenersatz bei Belästigung (mindestens 1.000 Euro).  
+
+7. Was bedeutet „Barrierefreiheit“ laut dem Dokument?
+Antwort:  
+Barrierefreiheit bedeutet, dass bauliche und technische Einrichtungen, Verkehrsmittel, digitale Systeme und andere Lebensbereiche für Menschen mit Behinderungen zugänglich und nutzbar sind – ohne besondere Erschwernis oder fremde Hilfe.  
+
+8. Was kann man tun, wenn man diskriminiert wird?
+Antwort:  
+- Beratung einholen (z. B. bei der Behindertenanwaltschaft oder der Arbeiterkammer).  
+- Ein Schlichtungsverfahren beim Sozialministerium-Service beantragen.  
+- Falls keine Einigung erzielt wird, eine Klage vor Gericht einbringen.

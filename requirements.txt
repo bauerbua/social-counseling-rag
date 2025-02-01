@@ -2,7 +2,7 @@ chainlit
 requests 
 transformers[torch]
 sentence-transformers>=3.0.0
-pypdf
+pdfminer.six
 haystack-ai
 numpy==1.26.4
 

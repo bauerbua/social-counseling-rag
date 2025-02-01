@@ -2,6 +2,8 @@ import os
 import chainlit as cl
 from main import queryDB
 
+# TODO: Add weaviate connection at start
+
 @cl.on_message
 async def handle_message(message: cl.Message):
     """Handles user messages and returns responses from the Haystack pipeline."""
