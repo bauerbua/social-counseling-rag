@@ -21,22 +21,21 @@ if "HF_API_TOKEN" not in os.environ:
     raise EnvironmentError("Hugging Face token not found in environment variables.")
 
 
-def queryDB(question: str): 
+def init_chain(): 
     document_store = WeaviateDocumentStore(url='http://localhost:8080')
     chat_template = [
         ChatMessage.from_system(
             """
+            <|system|>
             You are a helpful, respectful, and honest assistant. 
             Follow these strict instructions:  
 
             - Answer **ONLY in German**.  
-            - Use **gender-neutral language** or **gender with '*'**.  
-            - Provide structured answers with **bullet points or numbered lists** when appropriate.  
+            - Use **gender-neutral language** or **gender with '*'**.<|end|>
             """),
-            # - **Use only the provided context.** If the information is insufficient, say:  
-            # **"Es tut mir leid, aber ich kann diese Frage basierend auf den gegebenen Informationen nicht beantworten."**  
         ChatMessage.from_user(
             """
+            <|user|>
             Given the following information, answer the question.
 
             ### Kontext:  
@@ -49,22 +48,23 @@ def queryDB(question: str):
             {% endfor %}  
 
             ### Frage:  
-            {{ question }}  
-
-            ### Antwort:  
+            {{ question }}<|end|>
+            
+            <|assistant|>
             """
         )
     ]
 
     embedder =  SentenceTransformersTextEmbedder(model="sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2")
-    retriever = WeaviateEmbeddingRetriever(document_store=document_store, top_k=5)
+    retriever = WeaviateEmbeddingRetriever(document_store=document_store, top_k=3)
     reader = ExtractiveReader()
     reader.warm_up()
 
     prompt_builder = ChatPromptBuilder(template=chat_template)
     llm = HuggingFaceAPIChatGenerator(
         api_type=HFGenerationAPIType.SERVERLESS_INFERENCE_API, 
-        api_params={"model": "microsoft/Phi-3.5-mini-instruct"}
+        api_params={"model": "microsoft/Phi-3.5-mini-instruct", "max_new_tokens": 512},
+        stop_words=["<|endoftext|>"],
         )
 
     query_pipeline = Pipeline()
@@ -79,17 +79,21 @@ def queryDB(question: str):
     query_pipeline.connect("prompt_builder.prompt", "llm.messages")
     query_pipeline.connect("llm.replies", "answer_builder.replies")
     query_pipeline.connect("retriever", "answer_builder.documents")
+    
+    return query_pipeline
 
+def queryDB(question: str): 
+    query_pipeline = init_chain()
     response = query_pipeline.run({
             "text_embedder": {"text": question},
             "prompt_builder": {"question": question},
             "answer_builder": {"query": question},
         })
-    document_store.client.close()
     return response
 
 if __name__ == "__main__": 
     # question = "Was ist das Ziel des Behinderten-Gleichstellungspakets?"
-    question = "Wann liegt eine unmittelbare Diskriminierung vor?"
+    # question = "Wann liegt eine unmittelbare Diskriminierung vor?"
+    question = "Wer ist durch das Behinderten-Einstellungsgesetz vor Diskriminierung geschützt?"
     result = queryDB(question)
     print(result)

@@ -2,8 +2,7 @@
 from pathlib import Path
 from haystack_integrations.document_stores.weaviate.document_store import WeaviateDocumentStore
 from haystack.components.writers import DocumentWriter
-from haystack.components.converters import PyPDFToDocument
-from haystack.components.preprocessors import DocumentSplitter, DocumentCleaner
+from haystack.components.preprocessors import DocumentCleaner, RecursiveDocumentSplitter
 from haystack.components.routers import FileTypeRouter
 from haystack.components.joiners import DocumentJoiner
 from haystack.components.embedders import SentenceTransformersDocumentEmbedder
@@ -39,11 +38,22 @@ The script can be executed directly to load and index all PDFs in a specified di
 
 def load_and_preprocess_files(directory_path: str):
     document_store = WeaviateDocumentStore(url='http://localhost:8080')
-    file_type_router = FileTypeRouter(mime_types=["application/pdf"]) # If other file types are present, add them here
+    file_type_router = FileTypeRouter(mime_types=["application/pdf"])
     pdf_converter = PDFMinerToDocument()
     document_joiner = DocumentJoiner()
     document_cleaner = DocumentCleaner()
-    document_splitter = DocumentSplitter(split_by="period", split_length=200, split_overlap=50)
+    document_splitter = RecursiveDocumentSplitter(
+        split_length=200,
+        split_overlap=40,
+        split_unit="word",
+        separators=["\n\n", "\n", "sentence", " "],
+        sentence_splitter_params={
+	        "language": "de", 
+	        "use_split_rules": True, 
+	        "keep_white_spaces": False
+        }
+    )
+    document_splitter.warm_up()
     document_embedder = SentenceTransformersDocumentEmbedder(model="sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2")
     document_embedder.warm_up()
     document_writer = DocumentWriter(document_store=document_store, policy=DuplicatePolicy.OVERWRITE)
